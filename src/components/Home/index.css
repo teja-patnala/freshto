@@ -1,6 +1,6 @@
 @keyframes blink {
     0% { opacity: 1; }
-    50% { opacity: 0.9; }
+    50% { opacity: 0.6; }
     100% { opacity: 1; }
 }
 
@@ -333,8 +333,9 @@
         top: 650px;
     }
     .fresto-img {
-        height: 60px;
-        width: 120px;
+        height: 100px;
+        width: 80%;
+        margin-top: 130px;
     }
     .services-img, .card-1 {
         height: 80px;
@@ -349,8 +350,8 @@
         margin: 5px 0 0;
     }
     .card-1 {
-        height: 80px;
-        width: 180px;
+        height: 130px;
+        width: 97%;
     }
     .card-11 {
         display: none;

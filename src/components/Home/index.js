@@ -61,14 +61,14 @@ export default function Home() {
                     <div className='card-1 animate-element' 
                          data-angle-desktop="120" data-distance-desktop="180"
                          data-angle-tablet="87" data-distance-tablet="120"
-                         data-angle-mobile-m="90" data-distance-mobile-m="-50"
+                         data-angle-mobile-m="90" data-distance-mobile-m="-55"
                          data-angle-mobile="90" data-distance-mobile="-90">
                         <h1 id ="font-size-card-i" className='special-heading'>Today's Special Picks</h1>  
                     </div>
                     <div className='card-1 animate-element' 
                          data-angle-desktop="160" data-distance-desktop="450"
                          data-angle-tablet="150" data-distance-tablet="300"
-                         data-angle-mobile-m="90" data-distance-mobile-m="490"
+                         data-angle-mobile-m="90" data-distance-mobile-m="480"
                          data-angle-mobile="90" data-distance-mobile="310">
                         <video className="fruit-video" src={groceries} autoPlay loop muted playsInline />
                         <Link to="/visit-store" className="buy-button">Visit Store</Link>
@@ -84,7 +84,7 @@ export default function Home() {
                     <div className='card-1 animate-element' 
                          data-angle-desktop="235" data-distance-desktop="190"
                          data-angle-tablet="260" data-distance-tablet="140"
-                         data-angle-mobile-m="90" data-distance-mobile-m="170"
+                         data-angle-mobile-m="90" data-distance-mobile-m="180"
                          data-angle-mobile="90" data-distance-mobile="90">
                         <video className="fruit-video" src={fruitVideo} autoPlay loop muted playsInline />
                         <Link to="/buy-fruits" className="buy-button">Buy Fruits</Link>
