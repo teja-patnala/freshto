@@ -8,6 +8,7 @@ import freshTo from "../../assets/fresto.jpg";
 import fruitVideo from "../../assets/videos/fruits.mp4";
 import milkVideo from "../../assets/videos/MilkVideo.mp4";
 import groceries from "../../assets/videos/groceries.mp4";
+import AboutUs from '../Aboutus';
 
 const updateElementAttributes = () => {
     const elements = document.querySelectorAll('.animate-element');
@@ -60,7 +61,7 @@ export default function Home() {
     return (
         <div className="home-container">
             <div className='card-11 animate-element'
-                 data-angle-desktop="203" data-distance-desktop="400"
+                 data-angle-desktop="203" data-distance-desktop="420"
                  data-angle-tablet="0" data-distance-tablet="0"
                  data-angle-mobile-m="0" data-distance-mobile-m="0"
                  data-angle-mobile="0" data-distance-mobile="0">
@@ -71,7 +72,7 @@ export default function Home() {
                 <div className="sub-container sub-container-1">
                     <img className='fresto-img' src={freshTo} alt="freshto" />
                     <div className='card-1 animate-element' 
-                         data-angle-desktop="120" data-distance-desktop="180"
+                         data-angle-desktop="100" data-distance-desktop="120"
                          data-angle-tablet="87" data-distance-tablet="120"
                          data-angle-mobile-m="90" data-distance-mobile-m="-55"
                          data-angle-mobile="90" data-distance-mobile="-90">
@@ -114,7 +115,7 @@ export default function Home() {
                         <Link to="/milk-plan" className="buy-button">Milk Plan</Link>
                     </div>
                     <div className='card-1 animate-element' 
-                         data-angle-desktop="235" data-distance-desktop="190"
+                         data-angle-desktop="250" data-distance-desktop="160"
                          data-angle-tablet="260" data-distance-tablet="140"
                          data-angle-mobile-m="90" data-distance-mobile-m="180"
                          data-angle-mobile="90" data-distance-mobile="90">
