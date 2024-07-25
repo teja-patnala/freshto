@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import './index.css';
 import freshTo from "../../assets/fresto.jpg";
 import fruitVideo from "../../assets/videos/fruits.mp4";
@@ -45,6 +48,15 @@ export default function Home() {
         };
     }, []);
 
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+    }
+
     return (
         <div className="home-container">
             <div className='card-11 animate-element'
@@ -63,7 +75,27 @@ export default function Home() {
                          data-angle-tablet="87" data-distance-tablet="120"
                          data-angle-mobile-m="90" data-distance-mobile-m="-55"
                          data-angle-mobile="90" data-distance-mobile="-90">
-                        <h1 id ="font-size-card-i" className='special-heading'>Today's Special Picks</h1>  
+                        <div className='slider-container'>
+                            <h1 id="font-size-card-i" className='special-heading'>Today's Special Picks</h1>
+                            <Slider {...settings}>
+                                <div>
+                                    <img alt="img1" className='slider-img' src= "https://res.cloudinary.com/dxx7ni6cl/image/upload/v1721828320/Bowl-of-fruit-5155e6f_smr4sa.jpg"/>
+                                    <h4>item1</h4>
+                                </div>
+                                <div>
+                                    <img alt="img1" className='slider-img' src= "https://res.cloudinary.com/dxx7ni6cl/image/upload/v1721828320/Bowl-of-fruit-5155e6f_smr4sa.jpg"/>
+                                    <h4>item1</h4>
+                                </div>
+                                <div>
+                                    <img alt="img1" className='slider-img' src= "https://res.cloudinary.com/dxx7ni6cl/image/upload/v1721828320/Bowl-of-fruit-5155e6f_smr4sa.jpg"/>
+                                    <h4>item1</h4>
+                                </div>
+                                <div>
+                                    <img alt="img1" className='slider-img' src= "https://res.cloudinary.com/dxx7ni6cl/image/upload/v1721828320/Bowl-of-fruit-5155e6f_smr4sa.jpg"/>
+                                    <h4>item1</h4>
+                                </div>
+                            </Slider>  
+                        </div>
                     </div>
                     <div className='card-1 animate-element' 
                          data-angle-desktop="160" data-distance-desktop="450"
