@@ -21,9 +21,9 @@
 
 .buy-button {
     position: absolute;
-    font-size: 16px;
+    font-size: 15px;
     z-index: 2; /* Ensure the button is above the video */
-    padding: 9px 18px;
+    padding: 9px 10px;
     background-color: #ff6600;
     color: white;
     font-weight: bold;
@@ -134,7 +134,7 @@
 }
 
 .card-11-heading {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
     color: #FEFEFE; /* Milk white color */
     padding: 10px;
@@ -177,6 +177,10 @@
 .nav-button:hover {
     background-color: #85afdc;
     border: solid 1px rgba(0, 0, 0, 0.356);
+}
+
+#font-size-card-i {
+    font-size: 15px;
 }
 
 .nav-button h4 {
@@ -367,6 +371,7 @@
         margin-top: 0; /* Ensuring no extra margin at the top */
         padding-top: 50px; /* Padding to move it below the navbar */
         margin-left: 0%;
+        margin: auto;
     }
     .sub-container-2 {
         margin-top: 0; /* Ensuring no extra margin at the top */
