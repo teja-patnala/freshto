@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     <div className="navbar">
-      <img alt="logo" className="logo" src={img1} />
+      <img alt="logo" className="logo" src="https://res.cloudinary.com/dxx7ni6cl/image/upload/v1722605121/IMG_0025_quopfv.jpg" />
       <div className="mid-nav-one">
         <Link className='nav-link' to="/">
           <div

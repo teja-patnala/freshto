@@ -1,29 +1,163 @@
-.about-us {
-    width: 100%;
-    padding: 20px;
-    background-color: #f7f7f7;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+/* General Container Styling */
+.container-modern {
+  width: 95vw;
+  max-width: 1300px; 
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 100px;
+}
+
+/* Hero Section Styling */
+.hero-section-modern {
+  background: linear-gradient(135deg, #6f42c1, #f8f9fa);
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 12px;
+  color: white;
+}
+
+.hero-heading-modern {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-subtext-modern {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* Content Section Styling */
+.content-modern {
+  padding: 40px 20px;
+}
+
+/* Section Styling */
+.section-modern {
+  margin-bottom: 40px;
+}
+
+.subheading-modern {
+  font-size: 2rem;
+  color: #6f42c1;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.subheading-modern::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 4px;
+  background: #6f42c1;
+  margin-top: 8px;
+}
+
+.paragraph-modern {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Services Styling */
+.services-modern {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.service-item-modern {
+  flex: 1;
+  min-width: 250px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.service-item-modern h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #6f42c1;
+}
+
+/* Steps Styling */
+.steps-modern {
+  counter-reset: step;
+}
+
+.steps-modern li {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.steps-modern li::before {
+  content: counter(step);
+  counter-increment: step;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #6f42c1;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+}
+
+/* Features List Styling */
+.features-modern {
+  list-style-type: none;
+  padding: 0;
+}
+
+.features-modern li {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.features-modern li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #6f42c1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-heading-modern {
+    font-size: 2.5rem;
   }
-  
-  .about-us.visible {
-    opacity: 1;
-    transform: translateY(0);
+
+  .hero-subtext-modern {
+    font-size: 1rem;
   }
-  
-  .about-us h2 {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 10px;
+
+  .subheading-modern {
+    font-size: 1.75rem;
   }
-  
-  .about-us p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #666;
+}
+
+@media (max-width: 480px) {
+  .hero-heading-modern {
+    font-size: 2rem;
   }
-  
+
+  .hero-subtext-modern {
+    font-size: 0.875rem;
+  }
+
+  .services-modern {
+    flex-direction: column;
+  }
+}

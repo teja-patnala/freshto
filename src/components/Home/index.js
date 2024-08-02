@@ -4,11 +4,9 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import './index.css';
-import freshTo from "../../assets/fresto.jpg";
 import fruitVideo from "../../assets/videos/fruits.mp4";
 import milkVideo from "../../assets/videos/MilkVideo.mp4";
 import groceries from "../../assets/videos/groceries.mp4";
-import AboutUs from '../Aboutus';
 
 const updateElementAttributes = () => {
     const elements = document.querySelectorAll('.animate-element');
@@ -70,7 +68,7 @@ export default function Home() {
             </div>
             <div className="flex-container">
                 <div className="sub-container sub-container-1">
-                    <img className='fresto-img' src="https://res.cloudinary.com/dxx7ni6cl/image/upload/v1722577040/IMG_0024_uqy6rj.jpg" alt="freshto" />
+                    <img className='fresto-img' src="https://res.cloudinary.com/dxx7ni6cl/image/upload/v1722610749/IMG_0026_w77icx.jpg" alt="freshto" />
                     <div className='card-1 animate-element' 
                          data-angle-desktop="100" data-distance-desktop="130"
                          data-angle-tablet="87" data-distance-tablet="120"
