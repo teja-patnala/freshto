@@ -70,9 +70,9 @@ export default function Home() {
             </div>
             <div className="flex-container">
                 <div className="sub-container sub-container-1">
-                    <img className='fresto-img' src={freshTo} alt="freshto" />
+                    <img className='fresto-img' src="https://res.cloudinary.com/dxx7ni6cl/image/upload/v1722577040/IMG_0024_uqy6rj.jpg" alt="freshto" />
                     <div className='card-1 animate-element' 
-                         data-angle-desktop="100" data-distance-desktop="120"
+                         data-angle-desktop="100" data-distance-desktop="130"
                          data-angle-tablet="87" data-distance-tablet="120"
                          data-angle-mobile-m="90" data-distance-mobile-m="-55"
                          data-angle-mobile="90" data-distance-mobile="-90">

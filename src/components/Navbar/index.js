@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './index.css';
 import { Link } from "react-router-dom";
-import img1 from '../../assets/logoo.jpg';
+import img1 from '../../assets/logoo.png';
 import homeIcon from "../../assets/icons/house-chimney.svg";
 import galleryIcon from "../../assets/icons/gallery.svg";
 import aboutIcon from "../../assets/icons/info.svg";
